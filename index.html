@@ -1,54 +1,35 @@
+
+
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>first html project</title>
-    <meta name="description" content="گوشی (خیر سرش) ">
-    <link rel="icon" type="image/ico" href="./phone.ico">
-    <style>
-        body {
-            font-family: Dana;
-        }
-        
-        table {
-            width: 100%;
-            text-align: right;
-            border-collapse: collapse;
-        }
-        
-        th, td {
-            border: 1px solid black;
-            padding: 16px;
-        }
-        </style>
+    <title>Document</title>
 </head>
-<body>
-    <caption>جدول کارمندان</caption>
-    <table>
-        <thead>
-            <tr>
-                <th>اسم</th>
-                <th colspan="2">مشخصات تماس</th>
-            </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>حمید رضا</td>
-            <td>09911575458</td>
-            <td>hamidreza@gmail.com</td>
-        </tr>
-        <tr>
-            <td>علی</td>
-            <td>09125232334</td>
-            <td>ali@gmail.com</td>
-        </tr>
-        <tr>
-            <td>حسن</td>
-            <td>09955834892</td>
-            <td>hasan@gmail.com</td>
-        </tr>
-    </tbody>
-    </table>
+<body style="font-size: xx-large;">
+
+<form action="url">
+    <h2>User Info</h2>
+    <label for="name">firstname</label>
+    <input type="text" id="name" name="firstname" autocomplete="on"><br>
+    <label for="name">lastname</label>
+    <input type="text" id="name" name="lastname"><br>
+  <h2>chekbox</h2>
+  <input type="checkbox" id="skill1" name="skill1" value="HTML">
+  <label for="skill1"> HTML</label>    <br>
+  <input type="checkbox" id="skill2" name="skill2" value="CSS"> 
+  <label for="skill2"> CSS </label> <br>
+  <input type="checkbox" id="skill3" name="skill3" value="JavaScript">
+  <label for="skill3">JavaScript</label> <br>
+  <h2>Radio buttons</h2>
+  <input type="radio" id="gender1" name="gender" value="male">
+  <label for="gender1">Male</label>    <br>
+  <input type="radio" id="gender2" name="gender" value="female">
+  <label for="gender2">Female</label> <br>
+  <h2> submit and reset buttons</h2>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset"> <br>
+</form>    
 </body>
 </html>
