@@ -10,26 +10,60 @@
 <body style="font-size: xx-large;">
 
 <form action="url">
-    <h2>User Info</h2>
-    <label for="name">firstname</label>
-    <input type="text" id="name" name="firstname" autocomplete="on"><br>
-    <label for="name">lastname</label>
-    <input type="text" id="name" name="lastname"><br>
-  <h2>chekbox</h2>
-  <input type="checkbox" id="skill1" name="skill1" value="HTML">
-  <label for="skill1"> HTML</label>    <br>
-  <input type="checkbox" id="skill2" name="skill2" value="CSS"> 
-  <label for="skill2"> CSS </label> <br>
-  <input type="checkbox" id="skill3" name="skill3" value="JavaScript">
-  <label for="skill3">JavaScript</label> <br>
-  <h2>Radio buttons</h2>
-  <input type="radio" id="gender1" name="gender" value="male">
-  <label for="gender1">Male</label>    <br>
-  <input type="radio" id="gender2" name="gender" value="female">
-  <label for="gender2">Female</label> <br>
-  <h2> submit and reset buttons</h2>
-  <input type="submit" value="Submit">
-  <input type="reset" value="Reset"> <br>
+<fieldset>
+  <legend>
+    <b>Personal Information</b>
+  </legend>
+  <label for="name">Firstname</label>
+  <input type="text" id="name" name="name" required> <br>
+  <label for="lastname">Lastname</label>
+  <input type="text" id="lastname" name="lastname" required> <br>
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>  <br>
+  <label for="gender"><b>choose your gender</b></label> <br>
+  <label for="gender">Male</label>
+  <input type="radio" name="gender"> <br>
+  <label for="gender">Female</label>
+  <input type="radio" name="gender"> <br>
+  <label for="country">choose your country</label>
+  <input type="text" list="country">
+  <datalist id="country">
+    <option value="usa"> USA </option>
+    <option value="uk"> UK </option>
+    <option value="canada"> Canada </option>
+    <option value="australia"> Australia </option>
+    <option value="japan"> Japan </option>
+    <option value="germany"> Germany </option>
+    <option value="china"> China </option>
+    <option value="russia"> Russia </option>
+    <option value="france"> France </option>
+    <option value="italy"> Italy </option>
+    <option value="spain"> Spain </option>
+    <option value="mexico"> Mexico </option>
+    <option value="other"> Other </option>
+    <option value="africa"> Africa </option>
+    <option value="asia"> Asia </option>
+    <option value="middle-east"> Middle East </option>
+    <option value="australasia"> Australia/New Zealand </option>
+    <option value="europe"> Europe </option>
+    <option value="africa"> Africa </option>
+    <option value="asia"> Asia </option>
+    <option value="middle-east"> Middle East </option>
+    <option value="australasia"> Australia/New Zealand </option>
+    <option value="europe"> Europe </option>
+    <option value="africa"> Africa </option>
+    <option value="asia"> Asia </option>
+    <option value="middle-east"> Middle East </option>
+    <option value="australasia"> Australia/New Zealand </option>
+    <option value="europe"> Europe </option>
+    <option value="africa"> Africa </option>
+    <option value="asia"> Asia </option>
+    <option value="middle-east"> Middle East </option>
+    <option value="australasia"> Australia/New Zealand </option>
+    <option value="europe"> Europe </option>
+    <option value="africa"> Africa </option>
+    
+    </datalist>
 </form>    
 </body>
 </html>
