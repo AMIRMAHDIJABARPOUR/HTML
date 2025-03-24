@@ -1,113 +1,35 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ثبت نام در سایت</title>
-    <link rel="icon" type="image/png" href="images/sabz-fav.png">
-    <link rel="stylesheet" href="styles/app.css">
-    <link rel="icon" href="images/sabz-fav.png">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            border: none;
-            outline: none;
-            font-family: Dana;
-            font-size: 18px;
-            box-sizing: border-box;
-        }
-        body{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background-color: #00BB8C;
-        }
-        form{
-            background-color: #fff;
-            border-radius: 12px;
-            padding: 20px 28px;
-            width: 400px;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="password"]{
-            width: 100%;
-            border: 1px solid #ded9ee;
-            padding: 16px;
-            border-radius: 8px;
-            color: #1b1b1b;
-            display: block;
-            transition: 180ms ease-in border-color;
-        }
-        input::placeholder{
-            color: grey;
-            font-weight: 300;
-        }
-        input:focus{
-            border-color: #89888b;
-        }
-        button[type="submit"],
-        input[type="submit"]{
-            background-color: #2ed573;
-            color: white;
-            padding: 12px;
-            border-radius: 8px;
-            display: block;
-            cursor: pointer;
-            width: 100%;
-        }
-        img{
-            display: block;
-            width: 110px;
-            margin: 0 auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/CSS.css">
+  <title>Document</title>
 </head>
 <body>
-<form action="" method="get">
-<img src="images/logo.png" alt="SabzLearn.ir">
-<input type="text" placeholder="نام مستعار" required><br>
-<input type="email" required placeholder="ایمیل"><br>
-<input type="password" required placeholder="رمز عبور"> <br>
-<input type="password" required placeholder=" تکرار رمز عبور"><br>
-<input type="checkbox" name ="accept"required>
-<label for="accept">شرایط و قوانین سایت <a href="#"> سبزلرن</a> را میپذیرم</label> <br>
-<input type="submit" value="ثبت نام">
-</form>
-
-
-
-
-
-
-    <!-- <form action="">
-        <img src="images/logo.png" alt="SabzLearn.ir">
-        <br>
-        <div>
-            <input type="text" placeholder="نام مستعار" name="username" autofocus required>
-        </div>
-        <br>
-        <div>
-            <input type="email" placeholder="ایمیل" name="email" required>
-        </div>
-        <br>
-        <div>
-            <input type="password" placeholder="رمز عبور" name="password" maxlength="8" required>
-            <br>
-            <input type="password" placeholder="تکرار رمز عبور" name="password_confirm" maxlength="8" required>
-        </div>
-        <br>
-        <div>
-            <input type="checkbox" id="accept" name="accept_roles" required>
-            <label for="accept">شرایط و قوانین سایت <a href="#">سبزلرن</a> را میپذیرم</label>
-        </div>
-        <br>
-        <button type="submit">ثبت نام</button>
-        <!-- <input type="submit" value="ثبت نام"> -->
-    </form> -->
-
+  
+  <div class="container">
+  <header>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+      <path fill-rule="evenodd" d="M11.47 13.28a.75.75 0 0 0 1.06 0l7.5-7.5a.75.75 0 0 0-1.06-1.06L12 11.69 5.03 4.72a.75.75 0 0 0-1.06 1.06l7.5 7.5Z" clip-rule="evenodd" />
+      <path fill-rule="evenodd" d="M11.47 19.28a.75.75 0 0 0 1.06 0l7.5-7.5a.75.75 0 1 0-1.06-1.06L12 17.69l-6.97-6.97a.75.75 0 0 0-1.06 1.06l7.5 7.5Z" clip-rule="evenodd" />
+    </svg>
+    <p class="main">محصولات</p>      
+    <a href="google.com" class="viewall">نمایش همه </a>
+  </header>
+    <div class="product product1">
+      <img src="/image/img1.jpg" alt="" class="first">
+      <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و</p>
+    </div>
+    <div class="product product3">
+      <img src="/image/img2.jpg" alt="" class="second">
+    </div>
+    <div class="product product2">
+      <img src="/image/img3.jpg" alt="" class="third">
+    </div>
+    <div class="product product4">
+      <img src="/image/img4.jpg" alt="" class="fourth">
+    </div>
+  </div>
 </body>
 </html>
