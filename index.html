@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/ico" href="./Battery.ico">
+  <title>پروژه تمرینیHTML پیشرفته </title>
+  <style>
+    table {
+      border-collapse: collapse;
+      border: solid 2px black
+    }
+
+    th {
+      border: solid 2px black;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+    }
+
+    td {
+      border: solid 2px black;
+      padding: 10px 10px 10px 10px;
+      margin: 0px;
+    }
+
+    .one {
+      width: 500 px;
+    }
+
+    #chapter_three {
+      width: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>به پروژه تمرینی پیشرفته HTML خوش آمدید</h1>
+    <ul>
+      <li><a href="#one">بخش 1 : جدول ها</a></li>
+      <li><a href="#two">بخش 2 : فرم ها</a></li>
+      <li><a href="#three">بخش 3:رسانه ها </a></li>
+      <li><a href="#four">بخش 4 :svgوiframe</a></li>
+      <li><a href="#five">بخش 5:سوالات متداول(FAQ) </a></li>
+      <br>
+      <hr>
+    </ul>
+  </header>
+  <main>
+    <section id="one">
+      <h2>بخش 1 </h2>
+      <table>
+        <tr>
+          <td style="text-align: center; border:none" colspan="4">جدول اطلاعات کاربران </td>
+        </tr>
+        <th>ردیف</th>
+        <th>نام</th>
+        <th>نام خانوادگی</th>
+        <th>ایمیل</th>
+        <tr>
+          <td>1</td>
+          <td>Jacob</td>
+          <td>Smith</td>
+          <td>Jacob.smith@gmail.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Amelia</td>
+          <td>Brown</td>
+          <td>Amelia_Brown@yahoo.com</td>
+        </tr>
+        <tr>
+          <td colspan="4">تعداد کاربران :2</td>
+        </tr>
+      </table>
+    </section>
+    <section id="two">
+      <h2>بخش 2 :</h2>
+      <br>
+      <form action="">
+        <fieldset>
+          <legend>فرم ثبت نام </legend>
+          <label for="username">نام کاربری:
+          </label>
+          <input type="text" name="username"><br> <br>
+          <label for="passwoed">رمز عبور:</label>
+          <input type="password" name="passwoed"><br><br>
+          <label for="email">ایمیل:</label>
+          <input type="email"><br><br>
+          <label for="sex">جنسیت :</label>
+          <select name="sex" id="sex">
+            <option value="men">مرد</option>
+            <option value="women">زن </option>
+            <option value="others">سایر</option>
+          </select><br><br>
+          <label for="bio">بیوگرافی:</label><br>
+          <textarea name="bio" id="bio" cols="50" rows="5"></textarea><br><br>
+          <button type="submit">ثبت نام </button>
+
+        </fieldset>
+      </form>
+    </section>
+    <section id="three">
+
+      <h2>بخش 3:</h2>
+      <p style="font-size: 20px;"><b>ویدیو</b></p>
+      <br><br>
+      <video id="chapter_three" src="./Video/Flowers.mp4" controls></video>
+      <p style="font-size: 20px;"><b>صدا</b></p>
+      <audio src="./Audio/HS.mp3" controls></audio>
+    </section>
+    <section id="four">
+      <h2>بخش 4:</h2>
+      <p style="font-size: 20px;"><b>نمایش Google Maps</b></p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5438.326509314749!2d50.98550569409711!3d35.85762679400485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1748896779401!5m2!1sen!2s"
+        width="600" height="450"></iframe>
+      <p style="font-size: 24px;"><b>SVG</b></p>
+      <svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" width="128px"
+        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z">
+        </path>
+      </svg>
+      <section id="five">
+        <details>
+          <summary>سوال 1:HTML چیست ؟</summary>
+          HTML یک زبان نشانه گذاری است که برای ساختار دهی و نممایش محتوا در وب استفاده میشود
+        </details>
+        <details>
+          <summary>سوال 2: چگونه میتوانم یک لینک ایجاد کنم ؟</summary>
+          برای ایحاد لینک از تگ &lt; a>استفاده میکنیم به مثال زیر توجه کنید <br>
+          <kbd>&lt; a href = "https://w3schools.com"> این یک لینک است &lt; /a>
+          </kbd>
+        </details>
+        <details>
+          <summary>سوال 3: آیا میتوانم از CSS در HTML استفاده کنم ؟</summary>
+          بله شما میتوانید از CSS برای استایل دهی HTML استفاد کنید این کار را میتوانید با استفاده از تگ <kbd>&lt;style>
+          </kbd>یا
+          لینک کردن فایل CSS انجام دهید
+        </details><br>
+        <hr>
+      </section>
+
+    </section>
+  </main>
+  <footer>
+    <p>&copy 2025 پروژه تمرینی HTML پیشرفته
+      . تمامی حقوق محفوظ است .
+    </p>
+    <p>
+      شما میتوانید از <a href="https://github.com/AMIRMAHDIJABARPOUR/HTML" target="_blank">GitHub</a> برای مشاهده کد های
+      بیشتر استفاده
+      کنید
+    </p>
+  </footer>
+</body>
+
+</html>
